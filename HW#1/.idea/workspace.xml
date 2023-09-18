@@ -5,32 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c17fc680-d073-491c-aefe-c6f390756196" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HW#1.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ass_1/ex_1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ass_1/ex_10.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ass_1/ex_2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ass_1/ex_3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ass_1/ex_4.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ass_1/ex_5.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ass_1/ex_6.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ass_1/ex_7.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ass_1/ex_8.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ass_1/ex_9.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ass_2/ex_1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW2/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW2/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW2/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW2/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW2/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW2/HW2.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW2/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/HW#1.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +25,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 8
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: -1
 }</component>
   <component name="ProjectId" id="2VVxsSZty1gdtQc1S8QVJXO9uoW" />
   <component name="ProjectViewState">
@@ -82,8 +59,6 @@
       <workItem from="1694935255522" duration="332000" />
       <workItem from="1694935912738" duration="10927000" />
       <workItem from="1695048491274" duration="950000" />
-      <workItem from="1695049454417" duration="71000" />
-      <workItem from="1695049545270" duration="8000" />
     </task>
     <servers />
   </component>
