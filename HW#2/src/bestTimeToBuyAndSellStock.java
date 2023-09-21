@@ -1,19 +1,18 @@
 public class bestTimeToBuyAndSellStock {
     public static void main(String[] args) {
-        String s = "codeleet";
-        int[] arr = {4,5,6,7,0,2,1,3};
-        System.out.println(restoreString(s, arr));
+
     }
 
-    public static String restoreString(String s, int[] indices) {
-        char[] arr = new char[indices.length];
-        for (int i = 0; i < indices.length; i++) {
-            arr[indices[i]] = s.charAt(i);
+    public static int maxProfit(int[] prices) {
+        int min=prices[0];
+        int profit=0;
+        for(int i:prices){
+            if(min>i){
+                min=i;
+            }
+            int a=i-min;
+            profit = profit>a ? profit:a;
         }
-        StringBuilder stringBuilder = new StringBuilder();
-        for (char c : arr) {
-            stringBuilder.append(c);
-        }
-        return stringBuilder.toString();
+        return profit;
     }
 }
