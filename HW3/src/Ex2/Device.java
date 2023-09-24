@@ -32,4 +32,16 @@ public abstract class Device {
     public void setDescr(String descr) {
         this.descr = descr;
     }
+
+    public void sound(String sound) {
+        System.out.println("The sound of " + this.name + ": " + sound);
+    }
+
+    public void show() {
+        System.out.println("The name of a device: " + this.name);
+    }
+
+    public void desc() {
+        System.out.println("Description: " + this.descr);
+    }
 }

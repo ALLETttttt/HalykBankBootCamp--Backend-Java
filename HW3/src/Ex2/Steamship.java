@@ -1,8 +1,14 @@
 package Ex2;
 
-public class Kettle extends Device {
-    public Kettle(String name, String descr) {
+public class Steamship extends Device {
+
+    public Steamship(String name, String descr) {
         super(name, descr);
+    }
+
+    @Override
+    public void sound(String sound) {
+        super.sound(sound);
     }
 
     @Override
@@ -13,10 +19,5 @@ public class Kettle extends Device {
     @Override
     public void desc() {
         super.desc();
-    }
-
-    @Override
-    public void sound(String sound) {
-        super.sound(sound);
     }
 }
