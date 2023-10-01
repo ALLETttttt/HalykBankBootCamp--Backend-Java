@@ -3,11 +3,11 @@ public class Admin extends Person implements IAdmin {
         super(email, password);
     }
 
-    public String getAdminEmail() {
+    private String getAdminEmail() {
         return "kz@kbtu.kz";
     }
 
-    public String getAdminPassword() {
+    private String getAdminPassword() {
         return "123";
     }
 
