@@ -18,6 +18,11 @@ public class Admin extends Person implements IAdmin {
     }
 
     @Override
+    public void showAllUsers(User user) {
+        user.showAllUsers();
+    }
+
+    @Override
     public void createQuiz() {
 
     }
