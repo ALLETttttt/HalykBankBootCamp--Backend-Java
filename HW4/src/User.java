@@ -3,10 +3,9 @@ import java.util.HashMap;
 public class User extends Person {
 
     private String confirmPassword;
-    private HashMap<String, Integer> userList;
-    public User(String email, String password, String confirmPassword, HashMap<String, Integer> userList) {
+    public HashMap<String, Integer> userList = new HashMap<String, Integer>();
+    public User(String email, String password, String confirmPassword) {
         super(email, password);
-        this.userList = userList;
         this.confirmPassword = confirmPassword;
     }
 
@@ -20,10 +19,6 @@ public class User extends Person {
 
     public void registration() {
         getUserList().put(getEmail(), 0);
-        getUserList().forEach(
-                (key, value) ->
-                        System.out.println("User: " + key + "->" + "points: " + value)
-        );
         System.out.println("Registration done successfully!!!");
     }
 
