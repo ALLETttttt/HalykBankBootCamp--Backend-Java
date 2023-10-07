@@ -1,22 +1,15 @@
 import java.util.HashMap;
 
 public class User extends Person implements IUser {
-    private int counter;
+
 
     public HashMap<String, String> userList = new HashMap<String, String>();
+    public HashMap<String, Integer> leaderBoard = new HashMap<String, Integer>();
 
     public User(String email, String password) {
         super(email, password);
-        this.counter = 0;
     }
 
-    public int getCounter() {
-        return counter;
-    }
-
-    public void setCounter(int counter) {
-        this.counter = counter;
-    }
 
     public HashMap<String, String> getUserList() {
         return this.userList;
@@ -26,9 +19,18 @@ public class User extends Person implements IUser {
         this.userList = userList;
     }
 
+    public HashMap<String, Integer> getLeaderBoard() {
+        return leaderBoard;
+    }
+
+    public void setLeaderBoard(HashMap<String, Integer> leaderBoard) {
+        this.leaderBoard = leaderBoard;
+    }
+
     @Override
     public void registration() {
         getUserList().put(getEmail(), getPassword());
+        getLeaderBoard().put(getEmail(), 0);
         System.out.println("Registration done successfully!!!");
     }
 
@@ -37,12 +39,21 @@ public class User extends Person implements IUser {
         return getUserList().containsKey(email) && getUserList().containsValue(password);
     }
 
-    public void showAllUsers() {
-        getUserList().forEach(
+    @Override
+    public void showLeaderBoard() {
+        getLeaderBoard().forEach(
                 (key, value) ->
                         System.out.println("User: " + key + " -> Points: " + value)
         );
     }
+
+    public void showAllUsers() {
+        getUserList().forEach(
+                (key, value) ->
+                        System.out.println("User: " + key + " -> Password: " + value)
+        );
+    }
+
 
 
 }
