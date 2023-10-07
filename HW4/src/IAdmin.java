@@ -3,5 +3,5 @@ public interface IAdmin {
 
     void showAllUsers(User user);
 
-    void createQuiz();
+    void createQuiz(Quiz quiz);
 }

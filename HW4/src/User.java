@@ -1,25 +1,40 @@
 import java.util.HashMap;
 
-public class User extends Person {
+public class User extends Person implements IUser {
+    private int counter;
 
-    private String confirmPassword;
-    public HashMap<String, Integer> userList = new HashMap<String, Integer>();
-    public User(String email, String password, String confirmPassword) {
+    public HashMap<String, String> userList = new HashMap<String, String>();
+
+    public User(String email, String password) {
         super(email, password);
-        this.confirmPassword = confirmPassword;
+        this.counter = 0;
     }
 
-    public HashMap<String, Integer> getUserList() {
+    public int getCounter() {
+        return counter;
+    }
+
+    public void setCounter(int counter) {
+        this.counter = counter;
+    }
+
+    public HashMap<String, String> getUserList() {
         return this.userList;
     }
 
-    public void setUserList(HashMap<String, Integer> userList) {
+    public void setUserList(HashMap<String, String> userList) {
         this.userList = userList;
     }
 
+    @Override
     public void registration() {
-        getUserList().put(getEmail(), 0);
+        getUserList().put(getEmail(), getPassword());
         System.out.println("Registration done successfully!!!");
+    }
+
+    @Override
+    public boolean login(String email, String password) {
+        return getUserList().containsKey(email) && getUserList().containsValue(password);
     }
 
     public void showAllUsers() {
@@ -30,11 +45,4 @@ public class User extends Person {
     }
 
 
-    public String getConfirmPassword() {
-        return confirmPassword;
-    }
-
-    public void setConfirmPassword(String confirmPassword) {
-        this.confirmPassword = confirmPassword;
-    }
 }
