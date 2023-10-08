@@ -4,10 +4,10 @@ import java.util.HashMap;
 
 public class Quiz {
 
-    private HashMap<Question, Answer> quiz = new HashMap<Question, Answer>();
+    private static HashMap<Question, Answer> quiz = new HashMap<Question, Answer>();
 
     public Quiz(HashMap<Question, Answer> quiz) {
-        this.quiz = quiz;
+        Quiz.quiz = quiz;
     }
 
     public Quiz() {}
@@ -17,7 +17,8 @@ public class Quiz {
     }
 
     public void setQuiz(HashMap<Question, Answer> quiz) {
-        this.quiz = quiz;
+        Quiz.quiz = quiz;
     }
+
 
 }

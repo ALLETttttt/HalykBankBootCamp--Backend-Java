@@ -7,16 +7,12 @@ import java.io.IOException;
 
 public class AdminMenu {
 
-    public void enterAdminMode(User user, Quiz quiz, BufferedReader input) throws IOException {
-        System.out.print("Email: ");
-        String email = input.readLine();
-        System.out.print("Password: ");
-        String password = input.readLine();
-        Admin admin = new Admin(email, password);
-        if (admin.checkAdmin()) {
-            System.out.println("Classes.Admin mode is entered!");
-            System.out.println("1. See all existing users \n2. Create a Classes.Quiz");
-            int choiceA = Integer.parseInt(input.readLine());
+    public void enterAdminMode(User user, Admin admin, Quiz quiz, String email, BufferedReader input) throws IOException {
+        System.out.println("Admin mode is entered!");
+        int choiceA = 0;
+        while (choiceA != -1) {
+            System.out.println("1. See all existing users \n2. Create a Quiz \n3. Log out");
+            choiceA = Integer.parseInt(input.readLine());
             if (choiceA == 1) {
                 admin.showAllUsers(user);
             } else if (choiceA == 2) {
@@ -36,6 +32,9 @@ public class AdminMenu {
                     }
                     admin.createQuiz(quiz, question, answer);
                 }
+            } else if (choiceA == 3) {
+                MainMenu mainMenu = new MainMenu();
+                mainMenu.mainMenu();
             }
         }
     }
