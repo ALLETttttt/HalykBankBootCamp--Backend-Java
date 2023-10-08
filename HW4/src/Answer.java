@@ -10,5 +10,4 @@ public class Answer {
     public void setOptions(HashMap<String, Boolean> options) {
         this.options = options;
     }
-
 }

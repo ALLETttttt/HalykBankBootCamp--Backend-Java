@@ -10,6 +10,10 @@ public class User extends Person implements IUser {
         super(email, password);
     }
 
+    public User() {
+        super();
+    }
+
 
     public HashMap<String, String> getUserList() {
         return this.userList;
@@ -46,6 +50,7 @@ public class User extends Person implements IUser {
                         System.out.println("User: " + key + " -> Points: " + value)
         );
     }
+
 
     public void showAllUsers() {
         getUserList().forEach(
