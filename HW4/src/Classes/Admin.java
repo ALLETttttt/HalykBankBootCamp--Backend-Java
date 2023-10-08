@@ -1,3 +1,7 @@
+package Classes;
+
+import Interfaces.IAdmin;
+
 public class Admin extends Person implements IAdmin {
     public Admin(String email, String password) {
         super(email, password);

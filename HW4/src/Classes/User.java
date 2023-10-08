@@ -1,3 +1,7 @@
+package Classes;
+
+import Interfaces.IUser;
+
 import java.util.HashMap;
 
 public class User extends Person implements IUser {
@@ -47,7 +51,7 @@ public class User extends Person implements IUser {
     public void showLeaderBoard() {
         getLeaderBoard().forEach(
                 (key, value) ->
-                        System.out.println("User: " + key + " -> Points: " + value)
+                        System.out.println("Classes.User: " + key + " -> Points: " + value)
         );
     }
 
@@ -55,7 +59,7 @@ public class User extends Person implements IUser {
     public void showAllUsers() {
         getUserList().forEach(
                 (key, value) ->
-                        System.out.println("User: " + key + " -> Password: " + value)
+                        System.out.println("Classes.User: " + key + " -> Password: " + value)
         );
     }
 

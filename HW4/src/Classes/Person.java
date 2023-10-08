@@ -1,3 +1,5 @@
+package Classes;
+
 public abstract class Person {
     private String email;
     private String password;
