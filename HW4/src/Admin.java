@@ -23,7 +23,7 @@ public class Admin extends Person implements IAdmin {
     }
 
     @Override
-    public void createQuiz(Quiz quiz) {
-
+    public void createQuiz(Quiz quiz, Question question, Answer answer) {
+        quiz.getQuiz().put(question, answer);
     }
 }

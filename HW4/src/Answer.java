@@ -1,6 +1,6 @@
 import java.util.HashMap;
 
-public class Answer implements IAnswer {
+public class Answer {
     private HashMap<String, Boolean> options = new HashMap<String, Boolean>();
 
     public HashMap<String, Boolean> getOptions() {
@@ -11,10 +11,4 @@ public class Answer implements IAnswer {
         this.options = options;
     }
 
-    @Override
-    public void createOptions() {
-        for (int i = 0; i < 4; i++) {
-
-        }
-    }
 }

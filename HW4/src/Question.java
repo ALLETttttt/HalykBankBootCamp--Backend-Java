@@ -1,4 +1,4 @@
-public class Question implements IQuestion {
+public class Question {
 
     private String question;
 
@@ -14,8 +14,4 @@ public class Question implements IQuestion {
         this.question = question;
     }
 
-    @Override
-    public void createQuestion() {
-
-    }
 }
