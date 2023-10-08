@@ -8,6 +8,8 @@ public class Quiz {
         this.quiz = quiz;
     }
 
+    public Quiz() {}
+
     public HashMap<Question, Answer> getQuiz() {
         return quiz;
     }
