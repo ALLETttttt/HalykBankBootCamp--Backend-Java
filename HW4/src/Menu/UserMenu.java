@@ -2,9 +2,13 @@ package Menu;
 
 import Classes.Quiz;
 import Classes.User;
+import Filters.SortByUserName;
 
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.util.Collections;
+import java.util.Map;
+import java.util.TreeMap;
 
 public class UserMenu {
 
