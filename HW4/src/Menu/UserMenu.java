@@ -3,12 +3,11 @@ package Menu;
 import Classes.Quiz;
 import Classes.User;
 import Filters.SortByUserName;
+import Filters.SortByUserPoints;
 
 import java.io.BufferedReader;
 import java.io.IOException;
-import java.util.Collections;
-import java.util.Map;
-import java.util.TreeMap;
+import java.util.*;
 
 public class UserMenu {
 
@@ -41,6 +40,17 @@ public class UserMenu {
             choiceU = Integer.parseInt(input.readLine());
             if (choiceU == 1) {
                 user.showLeaderBoard();
+                System.out.println("1. Sort by User name \n2. Sort by User points");
+                int choiceU1 = Integer.parseInt(input.readLine());
+                Set<Map.Entry<String, Integer>> entrySet = user.getLeaderBoard().entrySet();
+                List<Map.Entry<String, Integer>> list = new ArrayList<>(entrySet);
+                if (choiceU1 == 1) {
+                    list.sort(new SortByUserName());
+                    list.forEach((k) -> System.out.println("User " + k.getKey() + " -> Points: " + k.getValue()));
+                } else if (choiceU1 == 2) {
+                    list.sort(new SortByUserPoints());
+                    list.forEach((k) -> System.out.println("User " + k.getKey() + " -> Points: " + k.getValue()));
+                }
             } else if (choiceU == 2) {
                 quiz.getQuiz().forEach(
                         (key, value) -> {
