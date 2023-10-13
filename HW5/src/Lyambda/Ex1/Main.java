@@ -3,8 +3,10 @@ package Lyambda.Ex1;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.Period;
+import java.util.Date;
 
 public class Main {
     public static void main(String[] args) throws IOException {
@@ -64,5 +66,21 @@ public class Main {
         } catch (Exception e) {
             System.out.println(statement);
         }
+
+        System.out.println("System for calculating week day of the date!");
+
+        WeekDayOfDate weekDayOfDate = date -> new SimpleDateFormat("EEEE").format(date);
+
+        System.out.println("Enter your date:");
+        System.out.print("Year: ");
+        int yearW = Integer.parseInt(input.readLine());
+        System.out.print("Month: ");
+        int monthW = Integer.parseInt(input.readLine());
+        System.out.print("Day: ");
+        int dayW = Integer.parseInt(input.readLine());
+
+        Date date = new Date(yearW, monthW, dayW);
+
+        System.out.println(weekDayOfDate.calculateWeekDayOfDate(date));
     }
 }
