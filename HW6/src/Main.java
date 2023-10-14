@@ -1,17 +1,47 @@
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+import Exceptions.EmptyListException;
+import Classes.Person;
+import Exceptions.NoMatchingDataException;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
+
 public class Main {
     public static void main(String[] args) {
-        // Press Opt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.print("Hello and welcome!");
+        List<Person> personList = new ArrayList<>();
 
-        // Press Ctrl+R or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+        personList.add(new Person("John", 20));
+        personList.add(new Person("Alice", 30));
+        personList.add(new Person("Bob", 25));
+        personList.add(new Person("Charlie", 35));
 
-            // Press Ctrl+D to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Cmd+F8.
-            System.out.println("i = " + i);
+        try {
+            if (personList.isEmpty()) {
+                throw new EmptyListException("The list is empty.");
+            } else {
+                for (Person person : personList) {
+                    System.out.println("Name: " + person.getName() + ", Age: " + person.getAge());
+                }
+            }
+        } catch (EmptyListException e) {
+            System.out.println(e.getMessage());
         }
+
+        try {
+            int limitAge = 21;
+            List<Person> list = personList.stream()
+                    .filter(person -> person.getAge() > limitAge)
+                    .toList();
+            if (list.isEmpty()) {
+                throw new NoMatchingDataException("No matching data!");
+            }
+            else {
+                list.forEach(System.out::println);
+            }
+        } catch (NoMatchingDataException e) {
+            System.out.println(e.getMessage());
+        }
+
+
     }
 }
