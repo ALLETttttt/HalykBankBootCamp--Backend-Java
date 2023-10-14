@@ -81,6 +81,6 @@ public class Main {
 
         Date date = new Date(yearW, monthW, dayW);
 
-        System.out.println(weekDayOfDate.calculateWeekDayOfDate(date));
+        System.out.println(date + " - " + weekDayOfDate.calculateWeekDayOfDate(date));
     }
 }

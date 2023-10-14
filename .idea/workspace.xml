@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6e3a01e5-5160-4ff8-bf41-36dd332b4709" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/HW5/src/Lyambda/Ex2/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW5/src/Lyambda/Ex2/Operations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW5/src/Lyambda/Ex3/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW1/HW1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW2/HW2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW3/HW3.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW4/HW4.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW5/HW5.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW5/src/Lyambda/Ex1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/HW5/src/Lyambda/Ex1/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW6/HW6.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW7/HW7.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW8/HW8.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LECTURE1/LECTURE1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LECTURE2/LECTURE2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LECTURE3/LECTURE3.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LECTURE4/LECTURE4.iml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 4
+}]]></component>
+  <component name="ProjectId" id="2WjzU3SBUSXtZuRJMRUaS1Gj8PJ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/bakdaulet/IdeaProjects/JustCode",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6e3a01e5-5160-4ff8-bf41-36dd332b4709" name="Changes" comment="" />
+      <created>1697260790033</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1697260790033</updated>
+      <workItem from="1697260791258" duration="162000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
