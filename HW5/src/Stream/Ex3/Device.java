@@ -54,4 +54,15 @@ public class Device {
     public void setType(DeviceType type) {
         this.type = type;
     }
+
+    @Override
+    public String toString() {
+        return "Device{" +
+                "name='" + name + '\'' +
+                ", manufacturedYear='" + manufacturedYear + '\'' +
+                ", price=" + price +
+                ", color='" + color + '\'' +
+                ", type=" + type +
+                '}';
+    }
 }

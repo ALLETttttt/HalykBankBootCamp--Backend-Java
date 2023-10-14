@@ -13,20 +13,47 @@ public class Main {
         devices.add(new Device("Smartwatch", "2022", 300, "Black", DeviceType.watch));
         devices.add(new Device("TV", "2019", 1200, "Black", DeviceType.tv));
 
+
         System.out.println("Show all devices: ");
         devices.forEach(System.out::println);
+        System.out.println();
 
         String colorFilter = "Black";
-        System.out.println("Specified" + colorFilter + "color on all devices");
+        System.out.println("Specified " + colorFilter + " color on all devices");
         devices.stream()
                 .filter(device -> device.getColor().equalsIgnoreCase(colorFilter))
                 .forEach(System.out::println);
+        System.out.println();
 
         String year = "2022";
-        System.out.println("Specified" + year + "year on all devices");
+        System.out.println("Specified " + year + " year on all devices");
         devices.stream()
                 .filter(device -> device.getManufacturedYear().equalsIgnoreCase(year))
                 .forEach(System.out::println);
+        System.out.println();
 
+        System.out.println("Show the higher specified price on all devices");
+        int price = 500;
+        devices.stream()
+                .filter(device -> device.getPrice() > price)
+                .forEach(System.out::println);
+        System.out.println();
+
+        System.out.println("Show all devices of a given type");
+        DeviceType type = DeviceType.watch;
+        devices.stream()
+                .filter(device -> device.getType().equals(type))
+                .forEach(System.out::println);
+        System.out.println();
+
+        System.out.println("Show all devices, where is whose year of manufacture in the above respect");
+        int startYear = 2021;
+        int endYear = 2022;
+        devices.stream()
+                .filter(
+                        device -> Integer.parseInt(device.getManufacturedYear()) >= startYear
+                        && Integer.parseInt(device.getManufacturedYear()) <= endYear
+                )
+                .forEach(System.out::println);
     }
 }
