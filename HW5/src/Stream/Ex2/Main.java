@@ -3,6 +3,7 @@ package Stream.Ex2;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -19,7 +20,23 @@ public class Main {
                 .forEach(System.out::println);
         System.out.println();
 
+        Scanner input = new Scanner(System.in);
+        String userInput = input.nextLine();
+        long count = products.stream()
+                .filter(product -> product.equalsIgnoreCase(userInput))
+                .count();
+        System.out.println("Number of times a product matching the user's title was discovered: " + count);
+        System.out.println();
 
+        String inputLetter = input.nextLine().toLowerCase();
+        System.out.println("All products that begin with a letter: " + inputLetter);
+        products.stream()
+                .filter(product -> product.toLowerCase().startsWith(inputLetter))
+                .forEach(System.out::println);
 
+        System.out.println("All products from the Milk category:");
+        products.stream()
+                .filter(product -> product.equalsIgnoreCase("Молоко"))
+                .forEach(System.out::println);
     }
 }
