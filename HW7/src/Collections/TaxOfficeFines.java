@@ -1,13 +1,10 @@
 package Collections;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Scanner;
+import java.util.*;
 
 public class TaxOfficeFines {
 
-    private static Map<Integer, List<Tax>> database = new HashMap<Integer, List<Tax>>();
+    private static Map<Integer, Person> database = new HashMap<Integer, Person>();
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -34,7 +31,7 @@ public class TaxOfficeFines {
                     showDataById();
                     break;
                 case 3:
-                    showDataByTypeOfFines();
+                    showDataByTypeOfPenalties();
                     break;
                 case 4:
                     showDataByCity();
@@ -43,7 +40,7 @@ public class TaxOfficeFines {
                     addPersonWithInfo();
                     break;
                 case 6:
-                    updatePersonFines();
+                    updatePersonPenalties();
                     break;
                 case 7:
                     deleteFines();
@@ -62,34 +59,82 @@ public class TaxOfficeFines {
     }
 
     private static void showDatabase() {
-
+        database.entrySet().forEach(System.out::println);
     }
 
     private static void showDataById() {
+        System.out.println("Введите идентификатор:");
+        Integer code = Integer.valueOf(getUserInput());
 
+        if (database.containsKey(code)) {
+            System.out.println(database.get(code));
+            System.out.println("Распечатка данных по конкретному коду выполнена.");
+        } else {
+            System.out.println("Введенный данные не существуют в системе.");
+        }
     }
 
-    private static void showDataByTypeOfFines() {
+    private static void showDataByTypeOfPenalties() {
+        System.out.println("Введите тип штрафа:");
+        String typeOfPenalties = getUserInput();
 
+        database.entrySet()
+                .stream()
+                .filter(entry -> entry.getValue().getTypeOfPenalties().equals(typeOfPenalties))
+                .forEach(System.out::println);
+
+        System.out.println("Распечатка данных по конкретному типу штрафа выполнена.");
     }
 
     private static void showDataByCity() {
+        System.out.println("Введите город:");
+        String city = getUserInput();
 
+        database.entrySet()
+                .stream()
+                .filter(entry -> entry.getValue().getCity().equals(city))
+                .forEach(System.out::println);
+
+        System.out.println("Распечатка данных по конкретному городу выполнена.");
     }
 
     private static void addPersonWithInfo() {
+        System.out.println("Введите идентификатор:");
+        Integer code = Integer.valueOf(getUserInput());
 
+        System.out.println("Введите имя человека:");
+        String name = getUserInput();
+
+        System.out.println("Введите город:");
+        String city = getUserInput();
+
+        System.out.println("Введите тип штрафа:");
+        String typeOfPenalties = getUserInput();
+
+        System.out.println("Введите штраф:");
+        String penalty = getUserInput();
+
+        List<String> penalties = new ArrayList<String>();
+        penalties.add(penalty);
+
+        Person person = new Person();
+        person.setName(name);
+        person.setCity(city);
+        person.setTypeOfPenalties(typeOfPenalties);
+        person.setPenalties(penalties);
+
+        database.put(code, person);
+        System.out.println("Операция добавление нового человека с информацией о нем прошла успешно.");
     }
 
-    private static void updatePersonFines() {
+    private static void updatePersonPenalties() {}
 
-    }
+    private static void deleteFines() {}
 
-    private static void deleteFines() {
+    private static void changeInfo() {}
 
-    }
-
-    private static void changeInfo() {
-
+    private static String getUserInput() {
+        Scanner input = new Scanner(System.in);
+        return input.nextLine().trim();
     }
 }
