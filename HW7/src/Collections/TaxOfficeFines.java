@@ -40,7 +40,7 @@ public class TaxOfficeFines {
                     addPersonWithInfo();
                     break;
                 case 6:
-                    updatePersonPenalties();
+                    addPersonPenalties();
                     break;
                 case 7:
                     deleteFines();
@@ -127,7 +127,7 @@ public class TaxOfficeFines {
         System.out.println("Операция добавление нового человека с информацией о нем прошла успешно.");
     }
 
-    private static void updatePersonPenalties() {}
+    private static void addPersonPenalties() {}
 
     private static void deleteFines() {}
 
