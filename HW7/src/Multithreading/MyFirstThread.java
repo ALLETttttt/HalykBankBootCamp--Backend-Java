@@ -12,23 +12,7 @@ public class MyFirstThread {
     private static double average;
 
     public static void main(String[] args) {
-        Thread firstThread = new Thread();
-    }
-
-    private static void fillArray() {
-        Random random = new Random();
-        for (int i = 0; i < SIZE; i++) {
-            arr[i] = random.nextInt(100);
-        }
-    }
-
-    private static void getSum() {
-        for (int i: arr) {
-            sum += i;
-        }
-    }
-
-    private static void getAverage() {
-        average = (double) sum / SIZE;
     }
 }
+
+
