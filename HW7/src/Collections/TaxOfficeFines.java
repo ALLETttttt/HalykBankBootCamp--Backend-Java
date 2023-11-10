@@ -80,7 +80,9 @@ public class TaxOfficeFines {
 
         database.entrySet()
                 .stream()
-                .filter(entry -> entry.getValue().getTypeOfPenalties().equals(typeOfPenalties))
+                .filter(entry -> entry.getValue()
+                        .getTypeOfPenalties()
+                        .equals(typeOfPenalties))
                 .forEach(System.out::println);
 
         System.out.println("Распечатка данных по конкретному типу штрафа выполнена.");
@@ -127,11 +129,68 @@ public class TaxOfficeFines {
         System.out.println("Операция добавление нового человека с информацией о нем прошла успешно.");
     }
 
-    private static void addPersonPenalties() {}
+    private static void addPersonPenalties() {
+        System.out.println("Введите идентификатор:");
+        Integer code = Integer.valueOf(getUserInput());
 
-    private static void deleteFines() {}
+        if (database.containsKey(code)) {
+            System.out.println("Введите штраф:");
+            String penalty = getUserInput();
+            database.entrySet()
+                    .stream()
+                    .filter(entry -> entry.getValue().getPenalties().add(penalty))
+                    .forEach(System.out::println);
+            System.out.println("Добавление новых штрафов для существующей записи выполнена.");
+        } else {
+            System.out.println("Введенные данные не существуют.");
+        }
+    }
 
-    private static void changeInfo() {}
+    private static void deleteFines() {
+        System.out.println("Введите идентификатор:");
+        Integer code = Integer.valueOf(getUserInput());
+
+        if (database.containsKey(code)) {
+            database.remove(code);
+            System.out.println("Удаление штрафа выполнена.");
+        } else {
+            System.out.println("Введенные данные не существуют.");
+        }
+    }
+
+    private static void changeInfo() {
+        System.out.println("Введите идентификатор:");
+        Integer code = Integer.valueOf(getUserInput());
+
+        if (database.containsKey(code)) {
+
+            System.out.println("Введите имя человека:");
+            String name = getUserInput();
+
+            System.out.println("Введите город:");
+            String city = getUserInput();
+
+            System.out.println("Введите тип штрафа:");
+            String typeOfPenalties = getUserInput();
+
+            System.out.println("Введите штраф:");
+            String penalty = getUserInput();
+
+            List<String> penalties = new ArrayList<String>();
+            penalties.add(penalty);
+
+            Person personData = database.get(code);
+            personData.setName(name);
+            personData.setCity(city);
+            personData.setTypeOfPenalties(typeOfPenalties);
+            personData.setPenalties(penalties);
+
+            System.out.println("Замена информации о человеке и его штрафах выполнена.");
+
+        } else {
+            System.out.println("Введенные данные не существуют.");
+        }
+    }
 
     private static String getUserInput() {
         Scanner input = new Scanner(System.in);
