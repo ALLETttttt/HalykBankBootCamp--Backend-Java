@@ -4,9 +4,9 @@ import java.util.Arrays;
 import java.util.Random;
 
 public class MyFirstThread {
-    private static int SIZE = 10;
+    private static final int SIZE = 10;
 
-    private static int arr[] = new int[SIZE];
+    private static final int[] arr = new int[SIZE];
 
     private static int sum;
 
