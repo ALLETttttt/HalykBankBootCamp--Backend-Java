@@ -14,12 +14,12 @@ public class MyFirstThread {
 
     public static void main(String[] args) {
         Thread fillArray = new Thread(MyFirstThread::fillArray);
+        fillArray.start();
 
         Thread getSum = new Thread(MyFirstThread::getSum);
 
         Thread getAverage = new Thread(MyFirstThread::getAverage);
 
-        fillArray.start();
         try {
             fillArray.join();
             getSum.start();
