@@ -2,22 +2,62 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e3a01e5-5160-4ff8-bf41-36dd332b4709" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/HW5/src/Lyambda/Ex2/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW5/src/Lyambda/Ex2/Operations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW5/src/Lyambda/Ex3/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HW1/HW1.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HW2/HW2.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HW3/HW3.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HW4/HW4.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HW5/HW5.iml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW9/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/HW1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW1/src/Ass_1/ex_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/HW1/src/Ass_1/ex_1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW1/src/Ass_1/ex_10.java" beforeDir="false" afterPath="$PROJECT_DIR$/HW1/src/Ass_1/ex_10.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW1/src/Ass_1/ex_11.java" beforeDir="false" afterPath="$PROJECT_DIR$/HW1/src/Ass_1/ex_11.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW1/src/Ass_1/ex_12.java" beforeDir="false" afterPath="$PROJECT_DIR$/HW1/src/Ass_1/ex_12.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW1/src/Ass_1/ex_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/HW1/src/Ass_1/ex_2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW1/src/Ass_1/ex_3.java" beforeDir="false" afterPath="$PROJECT_DIR$/HW1/src/Ass_1/ex_3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW1/src/Ass_1/ex_4.java" beforeDir="false" afterPath="$PROJECT_DIR$/HW1/src/Ass_1/ex_4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW1/src/Ass_1/ex_5.java" beforeDir="false" afterPath="$PROJECT_DIR$/HW1/src/Ass_1/ex_5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW1/src/Ass_1/ex_6.java" beforeDir="false" afterPath="$PROJECT_DIR$/HW1/src/Ass_1/ex_6.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW1/src/Ass_1/ex_7.java" beforeDir="false" afterPath="$PROJECT_DIR$/HW1/src/Ass_1/ex_7.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW1/src/Ass_1/ex_8.java" beforeDir="false" afterPath="$PROJECT_DIR$/HW1/src/Ass_1/ex_8.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW1/src/Ass_1/ex_9.java" beforeDir="false" afterPath="$PROJECT_DIR$/HW1/src/Ass_1/ex_9.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW1/src/Ass_2/ex_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/HW1/src/Ass_2/ex_1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW1/src/Ass_2/ex_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/HW1/src/Ass_2/ex_2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW1/src/Ass_2/ex_3.java" beforeDir="false" afterPath="$PROJECT_DIR$/HW1/src/Ass_2/ex_3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW1/src/Ass_2/ex_4.java" beforeDir="false" afterPath="$PROJECT_DIR$/HW1/src/Ass_2/ex_4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW1/src/Ass_2/ex_5.java" beforeDir="false" afterPath="$PROJECT_DIR$/HW1/src/Ass_2/ex_5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW1/src/Ass_2/ex_6.java" beforeDir="false" afterPath="$PROJECT_DIR$/HW1/src/Ass_2/ex_6.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW1/tasks/java 2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW1/tasks/java.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/HW5/src/Lyambda/Ex1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/HW5/src/Lyambda/Ex1/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HW6/HW6.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HW7/HW7.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HW8/HW8.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LECTURE1/LECTURE1.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LECTURE2/LECTURE2.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LECTURE3/LECTURE3.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LECTURE4/LECTURE4.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW5/src/Lyambda/Ex2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/HW5/src/Lyambda/Ex2/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW5/src/Lyambda/Ex3/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/HW5/src/Lyambda/Ex3/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW5/src/Lyambda/Ex4/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/HW5/src/Lyambda/Ex4/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW5/src/Stream/Ex1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/HW5/src/Stream/Ex1/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW5/src/Stream/Ex2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/HW5/src/Stream/Ex2/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW5/src/Stream/Ex3/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/HW5/src/Stream/Ex3/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW5/src/Stream/Ex4/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/HW5/src/Stream/Ex4/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW5/tasks/java practice 6 part 1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW5/tasks/java practice 6 part 2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW6/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/HW6/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW6/tasks/java home work practice 7.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW7/src/Collections/Dictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/HW7/src/Collections/Dictionary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW7/src/Collections/FerrySimulation.java" beforeDir="false" afterPath="$PROJECT_DIR$/HW7/src/Collections/FerrySimulation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW7/src/Collections/TaxOfficeFines.java" beforeDir="false" afterPath="$PROJECT_DIR$/HW7/src/Collections/TaxOfficeFines.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW7/src/Multithreading/MyFirstThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/HW7/src/Multithreading/MyFirstThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW7/src/Multithreading/nFacPrimeThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/HW7/src/Multithreading/nFacPrimeThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW7/tasks/java home work 8.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW7/tasks/java practice 8 (part 1).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW7/tasks/java practice 8(part 2).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW8/src/FirstThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/HW8/src/FirstThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW8/src/SecondThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/HW8/src/SecondThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW8/src/ThirdThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/HW8/src/ThirdThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW8/tasks/java home work 9.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW9/src/Homework/CalculationThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/HW9/src/Homework/CalculationThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW9/src/Homework/DirectoryCopy.java" beforeDir="false" afterPath="$PROJECT_DIR$/HW9/src/Homework/DirectoryCopy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW9/src/Homework/FileProcessing.java" beforeDir="false" afterPath="$PROJECT_DIR$/HW9/src/Homework/FileProcessing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW9/src/Practice/ArrayOperationFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/HW9/src/Practice/ArrayOperationFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW9/src/Practice/CompareFiles.java" beforeDir="false" afterPath="$PROJECT_DIR$/HW9/src/Practice/CompareFiles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW9/src/Practice/CorporationSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/HW9/src/Practice/CorporationSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW9/src/Practice/LongStringFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/HW9/src/Practice/LongStringFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW9/src/Practice/ReadArraysFromFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/HW9/src/Practice/ReadArraysFromFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW9/tasks/java practice 10 (home work).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW9/tasks/java practice 10.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,24 +70,24 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2WjzU3SBUSXtZuRJMRUaS1Gj8PJ" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/bakdaulet/IdeaProjects/JustCode",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/bakdaulet/IdeaProjects/JustCode&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -57,6 +97,7 @@
       <option name="presentableId" value="Default" />
       <updated>1697260790033</updated>
       <workItem from="1697260791258" duration="162000" />
+      <workItem from="1699894307844" duration="15000" />
     </task>
     <servers />
   </component>
