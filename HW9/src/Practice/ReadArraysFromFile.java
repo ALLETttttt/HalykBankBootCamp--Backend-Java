@@ -1,50 +1,82 @@
 package Practice;
 
-import java.io.File;
-import java.io.FileNotFoundException;
+import java.io.*;
+import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Scanner;
 
 public class ReadArraysFromFile {
     public static void main(String[] args) {
-        try {
-            // Укажите путь к вашему файлу
-            File file = new File("arrays.txt");
+        Scanner input = new Scanner(System.in);
 
-            // Создайте объект Scanner для чтения из файла
-            Scanner scanner = new Scanner(file);
+        String path = input.nextLine();
+        try (BufferedReader reader = new BufferedReader(new FileReader(path))) {
+            int[][] arrays = new int[0][0];
 
-            // Создайте массивы для хранения данных
-            int[] firstArray = null;
-            int[] secondArray = null;
+            String line;
+            int lineNumber = 0;
 
-            // Читайте данные из файла и загружайте их в массивы
-            if (scanner.hasNextLine()) {
-                String[] firstLine = scanner.nextLine().split(" ");
-                firstArray = new int[firstLine.length];
-                for (int i = 0; i < firstLine.length; i++) {
-                    firstArray[i] = Integer.parseInt(firstLine[i]);
-                }
+            while ((line = reader.readLine()) != null) {
+                int[] array = Arrays.stream(line.split("\\s+"))
+                        .mapToInt(Integer::parseInt)
+                        .toArray();
+                arrays = Arrays.copyOf(arrays, arrays.length + 1);
+                arrays[lineNumber++] = array;
             }
-            System.out.println(Arrays.toString(firstArray));
 
-            if (scanner.hasNextLine()) {
-                String[] secondLine = scanner.nextLine().split(" ");
-                secondArray = new int[secondLine.length];
-                for (int i = 0; i < secondLine.length; i++) {
-                    secondArray[i] = Integer.parseInt(secondLine[i]);
-                }
+            System.out.println("Каждый массив на экран:");
+            for (int[] arr: arrays) {
+                System.out.println(Arrays.toString(arr));
             }
-            System.out.println(Arrays.toString(secondArray));
 
-            // Ваши массивы теперь содержат данные из файла
-            // Можете использовать их по вашему усмотрению
+            System.out.println();
 
-            // Закройте Scanner после использования
-            scanner.close();
+            for (int i = 0; i < arrays.length; i++) {
+                int[] arr = arrays[i];
+                int max = Arrays
+                        .stream(arr)
+                        .max()
+                        .orElseThrow();
 
-        } catch (FileNotFoundException e) {
-            System.err.println("Файл не найден: " + e.getMessage());
+                int min = Arrays
+                        .stream(arr)
+                        .min()
+                        .orElseThrow();
+
+                int sum = Arrays
+                        .stream(arr)
+                        .sum();
+
+                System.out.println("Массив " + (i + 1) + ":" + Arrays.toString(arr));
+                System.out.println("Максимум: " + max);
+                System.out.println("Минимум: " + min);
+                System.out.println("Сумма: " + sum);
+                System.out.println();
+            }
+
+            int overallMax = Arrays
+                    .stream(arrays)
+                    .flatMapToInt(Arrays::stream)
+                    .max()
+                    .orElseThrow();
+
+            int overallMin = Arrays
+                    .stream(arrays)
+                    .flatMapToInt(Arrays::stream)
+                    .min()
+                    .orElseThrow();
+
+            int overallSum = Arrays
+                    .stream(arrays)
+                    .flatMapToInt(Arrays::stream)
+                    .sum();
+
+            System.out.println("Общий максимум: " + overallMax);
+            System.out.println("Общий минимум: " + overallMin);
+            System.out.println("Общая сумма: " + overallSum);
+
+        } catch (IOException e) {
+            throw new RuntimeException(e);
         }
     }
 }
