@@ -1,0 +1,16 @@
+version: "3.9"
+services:
+  postgres:
+    image: postgres:9.3
+    environment:
+      POSTGRES_DB: "test_db"
+      POSTGRES_USER: "testuser"
+      POSTGRES_PASSWORD: "testpas"
+      PGDATA: "/var/lib/postgresql/data/pgdata"
+    volumes:
+      - db:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+volumes:
+  db:
+    driver: local
