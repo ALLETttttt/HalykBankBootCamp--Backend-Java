@@ -337,5 +337,3 @@ in staff_name_param varchar(255)
 select is_in_black_list('john barbie');
 
 select add_to_black_list('john barbie', 'chertkoi');
-
-
