@@ -1,1 +1,0 @@
-реализовать beanPostProcessor(beforeInitialization and after initialization)
